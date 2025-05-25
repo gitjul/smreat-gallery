@@ -35,6 +35,7 @@ $padding-modal: 1.875rem;
     background: linear-gradient($color-quaternary, $color-white);
     height: 100vh;
     padding: $padding-modal;
+    overflow-y: scroll;
 
     @media screen and (min-width: $default-breakpoint) {
       border-radius: $default-border-radius;
