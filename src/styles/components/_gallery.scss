@@ -1,0 +1,44 @@
+@use "../utils/variables" as *;
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin: 0 auto;
+
+  &__item {
+    overflow: hidden;
+  }
+
+  &__item--video {
+    position: relative;
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: $image-border-radius;
+  }
+
+  &__play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: $color-primary;
+    color: $color-white;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    height: 3rem;
+    width: 3rem;
+    cursor: pointer;
+
+    &:hover {
+      background: $color-quaternary;
+      color: $color-primary;
+    }
+  }
+}

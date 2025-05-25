@@ -1,0 +1,57 @@
+@use "../utils/variables" as *;
+
+$padding-modal: 1.875rem;
+
+.modal {
+  &--hidden {
+    display: none;
+  }
+
+  &:not(.modal--hidden) {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+
+  &__overlay {
+    position: absolute;
+    inset: 0;
+    background: $color-overlay;
+    backdrop-filter: blur(3px);
+  }
+
+  &__content {
+    position: relative;
+    z-index: 10;
+    background: $color-white;
+    padding: $padding-modal;
+    border-radius: 8px;
+    max-width: 1260px;
+
+    iframe {
+      display: block;
+      width: 100%;
+      height: 100%;
+      max-height: 500px;
+    }
+  }
+
+  &__close-button {
+    position: absolute;
+    top: $padding-modal;
+    right: $padding-modal;
+    background: $color-danger;
+    color: $color-white;
+    border: none;
+    font-size: 1.5rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 20;
+  }
+}

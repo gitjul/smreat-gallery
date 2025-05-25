@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SmartRecruiters Attrax Gallery</title>
+    <link rel="stylesheet" href="./styles/main.scss" />
+    <script type="module" src="./gallery.ts"></script>
+  </head>
+
+  <body>
+    <section class="snippet" role="region" aria-label="Introduction">
+      <h1>Snippet Heading</h1>
+      <p>
+        Lorem <i>ipsum</i> dolor sit amet, <b>consectetur</b> adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+        enim ad <a href="">minim</a> veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+    </section>
+
+    <!-- Links -->
+    <section class="links" role="region" aria-label="Links">
+      <h2>Links</h2>
+      <p>
+        <a href="" class="button button-primary" aria-role="button">
+          Link One
+        </a>
+        <a href="" class="button button-secondary" aria-role="button">
+          Link Two
+        </a>
+      </p>
+    </section>
+
+    <!-- Gallery -->
+    <section class="image-gallery" role="region" aria-label="Image gallery">
+      <ul class="gallery" role="list" aria-label="Image gallery">
+        <li class="gallery__item">
+          <img
+            class="gallery__image"
+            src="images/robot.png"
+            alt="Image of a friendly flying robot"
+          />
+        </li>
+        <li class="gallery__item">
+          <img
+            class="gallery__image"
+            src="images/team-meeting.png"
+            alt="Photo of a team meeting"
+          />
+        </li>
+        <li class="gallery__item gallery__item--video">
+          <img
+            class="gallery__image"
+            src="images/video-preview.png"
+            alt="Video preview"
+          />
+          <button
+            class="gallery__play-button"
+            aria-label="Play video"
+            aria-label="Watch video: Introduction to SmartRecruiters"
+            aria-haspopup="dialog"
+            aria-controls="videoModal"
+            title="Play video"
+          >
+            <span aria-hidden="true" class="gallery__play-icon">&#9658;</span>
+          </button>
+        </li>
+        <li class="gallery__item">
+          <img
+            class="gallery__image"
+            src="images/skyscrapers.png"
+            alt="Sunset over skyscrapers"
+          />
+        </li>
+        <li class="gallery__item">
+          <img
+            class="gallery__image"
+            src="images/team-ania.png"
+            alt="Young woman in glasses with a pen in her hand sitting at a desk during a meeting"
+          />
+        </li>
+      </ul>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal modal--hidden" id="videoModal">
+      <div class="modal__overlay" id="modalOverlay"></div>
+      <div class="modal__content">
+        <button
+          class="modal__close-button"
+          id="closeModal"
+          aria-label="Close video"
+        >
+          &times;
+        </button>
+        <div class="modal__heading">
+          <h1>Modal Heading</h1>
+        </div>
+        <p class="modal__text">
+          Lorem <i>ipsum</i> dolor sit amet, <b>consectetur</b> adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+          enim ad <a href="">minim</a> veniam, quis nostrud exercitation ullamco
+          laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+
+        <!-- The iframe's src is omitted to defer loading (see gallery.ts) -->
+        <iframe
+          id="youtubeFrame"
+          width="560"
+          height="315"
+          data-src="https://www.youtube.com/embed/x6iyz1AQhuU?si=Yv5skOTICKPMuFcf&autoplay=1"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+          autoplay
+        ></iframe>
+      </div>
+    </div>
+
+    <footer>
+      <p>
+        <small><b>Media copyright</b> - Lorem ipsum dolor sit amet.</small>
+      </p>
+    </footer>
+
+    <script type="module" src="gallery.ts"></script>
+  </body>
+</html>

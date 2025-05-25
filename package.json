@@ -1,0 +1,19 @@
+{
+  "name": "smreat-gallery",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.15.1",
+    "parcel": "^2.15.1",
+    "sass": "^1.89.0",
+    "typescript": "^5.8.3"
+  }
+}
