@@ -3,6 +3,10 @@
 body {
   background: linear-gradient($color-white, $color-quaternary);
   padding: 1.875rem;
+
+  &.modal-open {
+    overflow: hidden;
+  }
 }
 
 section,

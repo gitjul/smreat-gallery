@@ -7,9 +7,12 @@ const closeModalBtn = document.getElementById(
 ) as HTMLButtonElement;
 const modalOverlay = document.getElementById("modalOverlay") as HTMLDivElement;
 const iframe = document.getElementById("youtubeFrame") as HTMLIFrameElement;
+const body = document.querySelector("body") as HTMLBodyElement;
 
 function openModal() {
   modal.classList.remove("modal--hidden");
+  body.classList.add("modal-open");
+
   const videoURL = iframe.dataset.src;
   if (videoURL) {
     iframe.src = videoURL;
@@ -18,6 +21,7 @@ function openModal() {
 
 function closeModal() {
   modal.classList.add("modal--hidden");
+  body.classList.remove("modal-open");
   iframe.removeAttribute("src");
 }
 
