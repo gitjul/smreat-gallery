@@ -1,0 +1,24 @@
+@use "../utils/variables" as *;
+
+body {
+  background: linear-gradient($color-white, $color-quaternary);
+  padding: 1.875rem;
+}
+
+section,
+footer {
+  @media screen and (min-width: $default-breakpoint) {
+    max-width: $default-breakpoint;
+    margin: 0 auto;
+  }
+}
+
+section {
+  @media screen and (min-width: $default-breakpoint) {
+    text-align: center;
+  }
+}
+
+footer {
+  padding-top: $default-space;
+}

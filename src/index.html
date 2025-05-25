@@ -11,7 +11,7 @@
   <body>
     <section class="snippet" role="region" aria-label="Introduction">
       <h1>Snippet Heading</h1>
-      <p>
+      <p class="snippet__text">
         Lorem <i>ipsum</i> dolor sit amet, <b>consectetur</b> adipiscing elit,
         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
         enim ad <a href="">minim</a> veniam, quis nostrud exercitation ullamco
@@ -107,8 +107,7 @@
         <!-- The iframe's src is omitted to defer loading (see gallery.ts) -->
         <iframe
           id="youtubeFrame"
-          width="560"
-          height="315"
+          class="modal__iframe"
           data-src="https://www.youtube.com/embed/x6iyz1AQhuU?si=Yv5skOTICKPMuFcf&autoplay=1"
           title="YouTube video player"
           frameborder="0"
@@ -121,9 +120,7 @@
     </div>
 
     <footer>
-      <p>
-        <small><b>Media copyright</b> - Lorem ipsum dolor sit amet.</small>
-      </p>
+      <small><b>Media copyright</b> - Lorem ipsum dolor sit amet.</small>
     </footer>
 
     <script type="module" src="gallery.ts"></script>

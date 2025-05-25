@@ -1,0 +1,11 @@
+@use "../utils/variables" as *;
+
+.snippet {
+  &__text {
+    @media screen and (min-width: $default-breakpoint) {
+      margin: 0 auto;
+      max-width: 800px;
+      text-align: left;
+    }
+  }
+}
