@@ -2,12 +2,42 @@
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1rem;
   margin: 0 auto;
 
-  &__item--video {
-    position: relative;
+  @media screen and (min-width: 1025px) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  &__item {
+    &--video {
+      position: relative;
+    }
+
+    @media screen and (min-width: 1025px) {
+      &--1,
+      &--2 {
+        grid-row-start: 1;
+        grid-row-end: 3;
+      }
+
+      &--video {
+        grid-row-start: 1;
+        grid-row-end: 2;
+      }
+
+      &--4 {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column: span 2;
+      }
+
+      &--5 {
+        grid-row-start: 2;
+        grid-row-end: 4;
+      }
+    }
   }
 
   &__image {
