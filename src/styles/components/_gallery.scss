@@ -43,7 +43,7 @@
   &__image {
     display: block;
     width: 100%;
-    height: auto;
+    height: 100%;
     min-height: 250px;
     object-fit: cover;
     border-radius: $default-border-radius;
