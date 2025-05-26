@@ -61,6 +61,7 @@
     height: 3rem;
     width: 3rem;
     cursor: pointer;
+    transition: $button-transition;
 
     svg {
       margin-left: 4px;
