@@ -26,3 +26,12 @@ section {
 footer {
   padding-top: $default-space;
 }
+
+a,
+button,
+.button {
+  &:focus-visible {
+    outline: 3px solid $color-tertiary;
+    outline-offset: 2px;
+  }
+}

@@ -75,5 +75,9 @@
         fill: $color-primary;
       }
     }
+
+    &:focus-visible {
+      outline-color: $color-white;
+    }
   }
 }
