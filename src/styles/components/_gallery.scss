@@ -54,7 +54,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background: $color-primary;
-    color: $color-white;
     border: none;
     border-radius: 50%;
     font-size: 1.5rem;
@@ -62,9 +61,17 @@
     width: 3rem;
     cursor: pointer;
 
+    svg {
+      margin-left: 4px;
+      margin-top: 6px;
+    }
+
     &:hover {
       background: $color-quaternary;
-      color: $color-primary;
+
+      svg path {
+        fill: $color-primary;
+      }
     }
   }
 }
