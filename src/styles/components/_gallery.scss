@@ -44,6 +44,7 @@
     display: block;
     width: 100%;
     height: auto;
+    min-height: 250px;
     object-fit: cover;
     border-radius: $default-border-radius;
   }
