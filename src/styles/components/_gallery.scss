@@ -2,7 +2,7 @@
 
 .gallery {
   display: grid;
-  gap: 1rem;
+  gap: $default-space;
   margin: 0 auto;
 
   @media screen and (min-width: 1025px) {
