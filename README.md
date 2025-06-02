@@ -9,7 +9,7 @@ npm run dev
 
 Todo:
 
-- [ ] Use <dialog>, ensure modal accessibility and focus trapping
+- [ ] Use `<dialog>`, ensure modal accessibility and focus trapping
 - [ ] Simplify js
 - [ ] Fix semantic html issues
 - [ ] Ensure proper tabindex
