@@ -9,5 +9,8 @@ npm run dev
 
 Todo:
 
+- [ ] Use <dialog>, ensure modal accessibility and focus trapping
+- [ ] Simplify js
+- [ ] Fix semantic html issues
+- [ ] Ensure proper tabindex
 - [ ] Unit tests 
-- [ ] Modal accessibility: when open, hide focusable elements on the page from assistive technology and prevent them from receiving focus when the modal is active using the `inert` attribute
