@@ -1,13 +1,15 @@
 # SmartRecruiters Attrax Gallery
 
-Set up and run:
+Simple grid css gallery with a dialog containing a video.
+
+## Set up and run:
 
 ```
 npm install
 npm run dev
 ```
 
-Todo:
+## Todo:
 
 - [ ] Use `<dialog>`, ensure modal accessibility and focus trapping
 - [ ] Simplify js
